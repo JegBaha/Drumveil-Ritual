@@ -20,21 +20,12 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-Drumveil Ritual: 
-Derin Öğrenme ile Davul Nota Çıkarımı Özet Bu çalışma, SLKH (Synthesized Lakh) veri setindeki davul seslerini kullanarak bir "Onsets and Frames" derin öğrenme modelini eğitmeyi ve kullanıcı tarafından sağlanan bir şarkıdan davul notalarını çıkarmayı amaçlamaktadır. 
-Proje, Drumveil Ritual adıyla anılmıştır; bu isim, davul ritimlerinin gizemli bir şekilde ortaya çıkarılmasını ve ritüelistik bir öğrenme sürecini simgelemektedir. 
-Model, PyTorch ile geliştirilmiş, spektrogram tabanlı bir girişle çalışmakta ve MIDI formatında nota çıktıları üretmektedir. 
-Eğitim sürecinde karşılaşılan boyut uyumsuzlukları ve nota dağılımındaki dengesizlikler giderilmiş, sonuç olarak dengeli bir davul nota çıkarımı elde edilmiştir.
+Drumveil Ritual: Metal Müzik için Derin Öğrenme ile Davul Nota Çıkarımı
 
-Giriş 
-Davul ritimleri, müzik prodüksiyonunda ve analizinde temel bir rol oynar. Ancak, bir şarkıdan davul notalarını otomatik olarak çıkarmak, karmaşık sinyal işleme ve makine öğrenimi teknikleri gerektirir. 
-Bu proje, SLKH veri setindeki davul seslerini (drum.flac/wav) ve ilgili MIDI dosyalarını (drum.mid) kullanarak bir derin öğrenme modeli eğitmeyi hedeflemiştir. 
-Eğitilen model, kullanıcı tarafından sağlanan bir şarkıdan (örneğin, drums.mp3) davul notalarını çıkararak MIDI formatında bir çıktı üretmektedir. 
-Projenin temel katkıları şunlardır:
+Drumveil Ritual, metal müzik odaklı bir derin öğrenme projesi olarak, Slakh veri setindeki davul seslerini kullanarak bir "Onsets and Frames" modelini eğitmeyi ve bu türün yoğun ritimlerinden davul notalarını çıkarmayı hedefliyor. Proje, PyTorch ile geliştiriliyor ve Demucs’ü entegre ederek sesi davul, gitar ve vokal gibi bileşenlere ayırıyor, ardından spektrogram tabanlı bir yaklaşımla MIDI formatında nota çıktıları üretiyor.
 
-SLKH veri setiyle eğitilmiş bir "Onsets and Frames" modelinin geliştirilmesi. Spektrogram tabanlı bir girişle davul nota çıkarımının gerçekleştirilmesi. Eğitim sürecindeki boyut uyumsuzluklarının ve nota dağılımı dengesizliklerinin çözülmesi.
+Şu anda başlangıç aşamasında olan proje, metal müziğin agresif ve karmaşık yapısını analiz etme konusunda büyük bir potansiyel taşıyor. Eğitim sürecinde boyut uyumsuzlukları ve nota dengesizlikleri gibi çeşitli teknik zorluklarla karşılaşıyoruz, ancak bunlar aşılabilecek engeller. Demucs ile ses ayrıştırması, modelin davul vuruşlarını daha iyi izole etmesini sağlarken, "Onsets and Frames" mimarisi, metalin kaotik ritimlerini öğrenmek için sağlam bir temel sunuyor.
 
-Sonuç Drumveil Ritual, SLKH veri setindeki davul seslerini kullanarak bir "Onsets and Frames" derin öğrenme modelini başarıyla eğitmiş ve kullanıcı şarkılarından davul notalarını çıkarmıştır. 
-Eğitim sürecindeki boyut uyumsuzlukları ve nota dağılımındaki dengesizlikler giderilmiş, sonuç olarak dengeli bir nota çıkarımı elde edilmiştir. 
-Gelecekte, veri artırımı, dinamik zaman boyutu ayarı ve daha uzun eğitim süreleri ile modelin performansı daha da iyileştirilebilir. 
-Bu proje, müzik sinyal işleme ve derin öğrenme alanlarında otomatik nota çıkarımı için önemli bir adım teşkil etmektedir.
+Nasıl İşleyecek? Slakh’den alınan drum track’leri ile model eğitilecek, Demucs sayesinde kullanıcıdan gelen metal şarkılarında davul izole edilecek ve model, bu izole edilmiş davul sinyalinden notaları çıkararak MIDI dosyası oluşturacak. Proje, metal müzik odaklıdır (örneğin, Sleep Token, Architects gibi gruplar hedeflenmektedir).
+
+Proje henüz yolun başında ve önünde uzun bir geliştirme süreci var. Metal müziğin karmaşık doğası, daha fazla veri, ince ayar ve optimizasyon gerektiriyor.
